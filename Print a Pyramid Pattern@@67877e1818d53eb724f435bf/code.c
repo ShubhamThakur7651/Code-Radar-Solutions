@@ -2,19 +2,18 @@
 #include <stdio.h>
 
 int main() {
-    int rows, i, j, space;
+    int N, i, j, k;
 
-    printf("Enter the number of rows: ");
-    scanf("%d", &rows);
+    scanf("%d", &N);
 
-    for (i = 1; i <= rows; i++) {
+    for (i = 1; i <= N; i++) {
         // Print spaces
-        for (space = 1; space <= rows - i; space++) {
+        for (j = 1; j <= j - i; j++) {
             printf(" ");
         }
         
         // Print stars
-        for (j = 1; j <= 2 * i - 1; j++) {
+        for (k = 1; k <= 2 * i - 1; k++) {
             printf("*");
         }
         
