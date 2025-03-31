@@ -1,19 +1,25 @@
-// Your code here...
 #include <stdio.h>
 
 int main() {
-    int N, i, j, k;
+    int n, i, j, space;
 
-    scanf("%d", &N);
+    // Asking the user to input number of rows
+    printf("Enter the number of rows for the pyramid: ");
+    scanf("%d", &n);
 
-    for (i = 1; i <= N; i++){
-        for (j = 1; j>i ; j--) {
+    // Loop through rows
+    for (i = 1; i <= n; i++) {
+        // Print spaces before stars
+        for (space = 1; space <= n - i; space++) {
             printf(" ");
         }
-        for (k = 1; k <= 2 * i - 1; k++) {
+
+        // Print stars for each row
+        for (j = 1; j <= (2 * i - 1); j++) {
             printf("*");
         }
-        
+
+        // Move to the next line
         printf("\n");
     }
 
