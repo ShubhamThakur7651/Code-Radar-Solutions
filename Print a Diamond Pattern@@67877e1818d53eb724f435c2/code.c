@@ -38,6 +38,6 @@ printf("\n");
             printf("*");
         }
         printf("\n");
-    }
+    }
 }
 
