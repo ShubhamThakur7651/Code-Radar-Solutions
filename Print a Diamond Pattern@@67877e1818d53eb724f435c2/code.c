@@ -1,5 +1,5 @@
 // Your code here...
-include <stdio.h>
+#include <stdio.h>
 
 // Function prototype
 void printDiamond(int N);
