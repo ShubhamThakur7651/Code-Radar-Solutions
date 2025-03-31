@@ -3,8 +3,6 @@
 int main() {
     int n, i, j, space;
 
-    // Asking the user to input number of rows
-    printf("Enter the number of rows for the pyramid: ");
     scanf("%d", &n);
 
     // Loop through rows
