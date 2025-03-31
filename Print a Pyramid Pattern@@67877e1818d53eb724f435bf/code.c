@@ -1,16 +1,13 @@
 #include <stdio.h>
 
 int main() {
-    int n, i, j, space;
-    scanf("%d", &n);
-    // Loop through rows
-    for (i = 1; i <= n; i++) {
-        // Print spaces before stars
-        for (space = 1; space <= n - i; space++) {
+    int N, i, space, j;
+    scanf("%d", &N);
+    for(i=1; i<=N; i++){
+        for(space = 1 ; space <= (N-i); space++){
             printf(" ");
         }
-        // Print stars for each row
-        for (j = 1; j <= (2 * i - 1); j++) {
+        for(j=1; j <= (2*i-1); i++){
             printf("*");
         }
         printf("\n");
