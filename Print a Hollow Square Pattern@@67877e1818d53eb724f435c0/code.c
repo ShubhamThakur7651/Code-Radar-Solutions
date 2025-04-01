@@ -1,20 +1,17 @@
-// Your code here...
-#include<stdio.h>
-
+#include <stdio.h>
 int main(){
-    int N;
-    scanf("%d", &N);
-    for(int i = 0; i<N; i++){
-        for(int j=0; j<N; j++){
-            if(i == 0 || i == N-1 || j == 0; j == N-1){
+    int a;
+    scanf("%d", &a);
+    for(int i=0; i<a; i++){
+        for(int j=0; j<a; j++){
+            if(i == 0 || i == a - 1 || j == 0 || j == a - 1){
                 printf("*");
-            }
-            else{
+            }else{
                 printf(" ");
             }
         }
         printf("\n");
     }
-
+    
     return 0;
 }
