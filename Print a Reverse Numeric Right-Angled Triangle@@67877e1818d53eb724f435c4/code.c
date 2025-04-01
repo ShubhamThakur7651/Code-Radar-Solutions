@@ -1,15 +1,11 @@
-// Your code here...
 #include<stdio.h>
-
 int main(){
-    int N, k;
-    scanf("%d", &N);
-    for(int i = 1; i<=N; i++){
-        for(int j = 1; j>=i; j--){
-            printf("%d ",k++);
-        }
-        printf("\n");
-    }
-
-    return 0;
+   int num,row,col,count=1;
+   scanf("%d",&num);
+   for(row=1;row<=num;row++){
+    for(col=1;col<=row;col--)
+    {printf("%d ",count++);}
+   
+    printf("\n");}
+   return 0;
 }
