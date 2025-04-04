@@ -8,16 +8,14 @@ int getNthBit(int num, int n) {
 int main() {
     int num, n;
     
-    printf("Enter a number: ");
     scanf("%d", &num);
     
-    printf("Enter the bit position (0-31): ");
     scanf("%d", &n);
 
     if (n < 0 || n > 31) {
         printf("Invalid bit position! Please enter a value between 0 and 31.\n");
     } else {
-        printf("The value of bit %d is: %d\n", n, getNthBit(num, n));
+        printf("%d\n", n, getNthBit(num, n));
     }
     
     return 0;
