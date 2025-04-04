@@ -15,7 +15,7 @@ int main() {
     if (n < 0 || n > 31) {
         printf("Invalid bit position! Please enter a value between 0 and 31.\n");
     } else {
-        printf("The value of bit %d is: %d\n", n, getNthBit(num, n));
+        printf("%d: %d\n", n, getNthBit(num, n));
     }
     
     return 0;
