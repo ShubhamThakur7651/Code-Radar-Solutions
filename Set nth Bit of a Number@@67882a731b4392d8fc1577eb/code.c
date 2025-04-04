@@ -21,7 +21,7 @@ int main() {
         printf("%d", (number >> i) & 1);
     }
     
-    printf(")\nAfter setting bit %d: %d (in binary: ", bit_position, result);
+    printf("%d (in binary: ", bit_position, result);
     // Print binary representation (optional)
     for (int i = sizeof(int) * 8 - 1; i >= 0; i--) {
         printf("%d", (result >> i) & 1);
