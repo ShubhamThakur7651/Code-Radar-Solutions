@@ -1,15 +1,15 @@
-// Your code here...
-#include<stdio.h>
+#include <stdio.h>
 
-int main(){
-    int a, b;
-    scanf("%d %d", &a, &b);
-    if(a ^ b){
-        printf("Same Sign");
-    }
-    else{
-        printf("Different Sign");
-    }
+int main() {
+    int num1, num2;
 
+    scanf("%d", &num1);
+    scanf("%d", &num2);
+    if ((num1 ^ num2) >= 0) {
+        printf("Same Sign\n");
+    } else {
+        printf("Different Sign\n");
+    }
+    
     return 0;
 }
