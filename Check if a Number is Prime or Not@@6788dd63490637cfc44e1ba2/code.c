@@ -9,7 +9,8 @@ int main(){
         }
     if(n%n==0 && n%1==0){
         printf("Prime");
-    }return 0;
+    }
+    return 0;
     }
     printf("Prime");
     return 0;
