@@ -7,6 +7,6 @@ int main() {
         scanf("%d", &arr[i]);
         }
         bubblesort(arr, n);
-        printArray(arr, n);
+        printf(arr, n);
     return 0;
 }
