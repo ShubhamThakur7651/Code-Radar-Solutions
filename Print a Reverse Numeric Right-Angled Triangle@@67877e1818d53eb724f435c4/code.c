@@ -1,14 +1,12 @@
-
-#include<stdio.h>
-
-int main(){
-
-   int num,row,col,count=1;
-   scanf("%d",&num);
-   for(row=1;row<=num;row++){
-    for(col=1;col<=row;col--)
-    {printf("%d ",count++);}
-   
-    printf("\n");}
-   return 0;
+#include <stdio.h>
+int main() {
+    int n, i, j;
+    scanf("%d", &n);
+    for(i = n; i >= 1; i--) {
+        for(j = 1; j <= i; j++) {
+            printf("%d ", j);
+        }
+        printf("\n");
+    }
+    return 0;
 }
