@@ -2,12 +2,12 @@
 
 char is_prime(int n) {
     if (n <= 1) {
-        return 'e';  // Numbers less than or equal to 1 are not prime
+        return '1';  // Numbers less than or equal to 1 are not prime
     }
 
     for (int i = 2; i * i <= n; i++) {
         if (n % i == 0) {
-            return 'e';  // If divisible by any number other than 1 and itself
+            return '0';  // If divisible by any number other than 1 and itself
         }
     }
 
