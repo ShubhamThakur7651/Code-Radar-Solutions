@@ -22,21 +22,15 @@ int main() {
 
     struct Rectangle rectangles[N];
 
-    // Input rectangle details
-    for (int i = 0; i < N; i++) {
-        printf("Enter details for rectangle %d:\n", i + 1);
-        printf("Length: ");
-        scanf("%f", &rectangles[i].length);
-        printf("Breadth: ");
-        scanf("%f", &rectangles[i].breadth);
+    // Input rectangle 
     }
 
     // Display area and perimeter for each rectangle
     printf("\nRectangle Details:\n");
     for (int i = 0; i < N; i++) {
-        printf("Rectangle %d:\n", i + 1);
-        printf("Area: %.2f\n", calculateArea(rectangles[i]));
-        printf("Perimeter: %.2f\n\n", calculatePerimeter(rectangles[i]));
+        printf("Rectangle %d:", i + 1);
+        printf("Area: %.2f", calculateArea(rectangles[i]));
+        printf("Perimeter: %.2f", calculatePerimeter(rectangles[i]));
     }
 
     return 0;
