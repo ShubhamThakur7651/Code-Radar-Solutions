@@ -30,9 +30,9 @@ int main() {
     scanf("%s", str2);
 
     if (isRotation(str1, str2)) {
-        printf("\"%s\" is a rotation of \"%s\".\n", str2, str1);
+        printf("\"%s\" Yes \"%s\".\n", str2, str1);
     } else {
-        printf("\"%s\" is NOT a rotation of \"%s\".\n", str2, str1);
+        printf("\"%s\" No \"%s\".\n", str2, str1);
     }
 
     return 0;
