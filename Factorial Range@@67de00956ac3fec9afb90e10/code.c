@@ -1,36 +1,39 @@
-// Your code here...
 #include <stdio.h>
 
-// Function to compute factorial
-unsigned long long factorial(int n) {
+// Function to calculate factorial of a number
+long long factorial(int n) {
     if (n == 0 || n == 1)
         return 1;
-
-    unsigned long long result = 1;
-    for (int i = 2; i <= n; ++i)
+    
+    long long result = 1;
+    for (int i = 2; i <= n; i++)
         result *= i;
-
+    
     return result;
 }
 
-// Function to print factorials in a given range
-void printFactorials(int start, int end) {
+// Function to print the factorial of each number in the given range
+void print_factorial_range(int start, int end) {
     if (start > end) {
-        printf("Invalid range: start > end\n");
+        printf("Invalid range! Start should be <= End.\n");
         return;
     }
 
-    for (int i = start; i <= end; ++i) {
-        printf("Factorial of %d is: %llu\n", i, factorial(i));
-    }
+    for (int i = start; i <= end; i++)
+        printf("Factorial of %d is %lld\n", i, factorial(i));
 }
 
-// Example usage
 int main() {
-    int start = 0;
-    int end = 10;
-
-    printFactorials(start, end);
-
+    int start, end;
+    
+    // User input for range
+    printf("Enter the start of the range: ");
+    scanf("%d", &start);
+    printf("Enter the end of the range: ");
+    scanf("%d", &end);
+    
+    // Printing factorials in the range
+    print_factorial_range(start, end);
+    
     return 0;
 }
