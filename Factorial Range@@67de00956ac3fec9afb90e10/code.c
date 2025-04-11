@@ -25,11 +25,7 @@ void print_factorial_range(int start, int end) {
 
 int main() {
     int start, end;
-    
-    // User input for range
-    printf("Enter the start of the range: ");
     scanf("%d", &start);
-    printf("Enter the end of the range: ");
     scanf("%d", &end);
     
     // Printing factorials in the range
