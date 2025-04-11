@@ -29,7 +29,7 @@ int main() {
     scanf("%d", &end);
     
     // Printing factorials in the range
-    printf factorial_range(start, end);
+    printf ("start, end");
     
     return 0;
 }
